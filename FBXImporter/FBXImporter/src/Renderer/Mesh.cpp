@@ -11,7 +11,7 @@ Mesh::Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices, std:
     glGenVertexArrays(1, &_VAO);
     glGenBuffers(1, &_VBO);
     glGenBuffers(1, &_EBO);
-
+    
     glBindVertexArray(_VAO);
     glBindBuffer(GL_ARRAY_BUFFER, _VBO);
     glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), &vertices[0], GL_STATIC_DRAW);

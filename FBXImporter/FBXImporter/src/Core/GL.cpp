@@ -60,6 +60,10 @@ void GL::Init(int width, int height) {
     }
     
     glfwSetInputMode(_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
+
+    printf("%s\n", glGetString(GL_VERSION));
+    std::cout << "Version: " << glGetString(GL_VERSION) << "\n";
 }
 
 void GL::ProcessInput() {
